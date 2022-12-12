@@ -1,5 +1,1 @@
-Write a script that compiles a C file and creates an executable named cisfun.
-
-
-
-The C file name will be saved in the variable 
+Write a C programme that prints exactly 'Programming is like building a multilingua puzzle, followed by a new line
