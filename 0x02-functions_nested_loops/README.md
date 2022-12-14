@@ -1,1 +1,1 @@
-functions nested loops
+int _putchar(char c)
