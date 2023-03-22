@@ -1,19 +1,43 @@
-include "holberton.h"
+#include "main.h"
+
+#include <stdio.h>
+
+
 
 /**
- * _abs - Write a function that prints the sign of a number.
- * @n: argument to be check
+ * * _abs - value absolute
  *
- * Return: absolute value of n
-*/
+ * *    *@n: The int to print
+ *
+ * * Return: Always 0.
+ */
+
 int _abs(int n)
+
 {
-	if (n > 0)
+
+	if (n < 0)
+
 	{
-		return (n);
+
+		return (n * (-1));
+
 	}
+
+	else if (n == 0)
+
+	{
+
+		return (0);
+
+	}
+
 	else
+
 	{
-		return (n * -1);
+
+		return (n);
+
 	}
+
 }

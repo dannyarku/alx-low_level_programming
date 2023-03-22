@@ -1,34 +1,27 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
- * main - Sum of the even-valued terms of fib
+ *  *main - print first 50 fibonacci
  *
- *
- * Return: 0
+ *   *Return: 0 always.
  */
 
 int main(void)
+
 {
-	long int fib1, fib2, fib3, sum;
+	long int i, x = 1, y = 2, sum = 0, tSum = 0;
 
-	fib1 = 0;
-	fib2 = 0;
-	fib3 = 1;
-	sum = 0;
-
-	while (fib2 < 4000000)
+	for (i = 0; i < 49; i++)
 	{
-		fib2 = fib1 + fib3;
-		fib1 = fib3;
-		fib3 = fib2;
-
-		if (fib2 % 2 == 0)
+		if ((y % 2 == 0) && (y <= 4000000))
 		{
-			sum += fib2;
+			tSum = tSum + y;
 		}
-
+		sum = x + y;
+		x = y;
+		y = sum;
 	}
-	printf("%ld\n", sum);
+	printf("%ld\n", tSum);
 
 	return (0);
 }

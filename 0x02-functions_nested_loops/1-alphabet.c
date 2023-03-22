@@ -1,17 +1,18 @@
-#include "holberton.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
- * print_alphabet - prints 10 times the alphabet
- *
- * Return: On success 1.
+ ** print_alphabet- function to print abc
+ ** Return:
  */
+
 void print_alphabet(void)
 {
-	int letter;
+	char c;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(letter);
+	_putchar(c);
 	}
 	_putchar('\n');
 }

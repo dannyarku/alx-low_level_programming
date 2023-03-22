@@ -1,21 +1,29 @@
-#include "holberton.h"
+#include "main.h"
+
+
 
 /**
- * print_last_digit - Write a function that prints the last digit of a number.
- * @n: argument to be check
+ * * print_last_digit - Prints the last digit of a number.
  *
- * Return: absolute value of n
+ * * @n: The number in question.
+ *
+ * * Return: Value of the last digit.
  */
+
+
+
 int print_last_digit(int n)
+
 {
-	int absVal;
 
-	absVal = n % 10;
+	int last_digit = n % 10;
 
-	if (absVal < 0)
-	{
-		absVal = absVal * -1;
-	}
-	_putchar(absVal + '0');
-	return (absVal);
+	if (last_digit < 0)
+
+		last_digit *= -1;
+
+	_putchar(last_digit + '0');
+
+	return (last_digit);
+
 }
