@@ -44,4 +44,3 @@ filler[index] = *ptr_copy++;
 free(ptr);
 return (mem);
 }
-Footer
